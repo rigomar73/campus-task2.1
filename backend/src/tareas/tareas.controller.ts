@@ -13,7 +13,7 @@ export class TareasController {
 
   @Post()
   crear(@Body('titulo') titulo: string): Promise<Tarea> {
-    return this.tareasService.crear(titulo);
+    return this.tareasService.crear(titulo)
   }
 
   @Patch(':id')
